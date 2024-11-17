@@ -7,7 +7,7 @@ const productRoute = require('./routes/product.route.js');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-mongoose.connect(`mongodb+srv://bhargavareddy019:Neon123@cluster0.zpup2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
+mongoose.connect(`mongodb+srv://<username>:<password>cluster0.zpup2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
     .then(() => {
         console.log("Connected to DB");
         app.listen(3000, () => {
